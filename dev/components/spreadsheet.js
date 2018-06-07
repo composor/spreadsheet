@@ -160,7 +160,7 @@ export class SpreadSheet extends Component{
     e.target.className === 'price' && this.updatePrice(e)
   }
 
-  componentWasCreated() {
+  componentDidMount() {
     this.element.addEventListener('click', this)
     this.element.addEventListener('input', this)
   }
